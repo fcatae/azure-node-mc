@@ -1,0 +1,22 @@
+{
+  "name": "azure-node-mc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcatae/azure-node-mc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fcatae/azure-node-mc/issues"
+  },
+  "homepage": "https://github.com/fcatae/azure-node-mc#readme",
+  "dependencies": {
+    "flying-squid": "^0.5.1"
+  }
+}
