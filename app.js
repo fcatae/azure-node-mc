@@ -1,34 +1,16 @@
-// var http = require('http');
-// 
-// var port = process.env.PORT || 1337;
-// 
-// http.createServer(app).listen(port);
-// 
-// function app(req,res) {
-//     res.end('hello world! I am listening at ' + port);
-// }
-// 
-// console.log('hello world')
+#!/usr/bin/env node
 
-var mcServer = require("flying-squid");
+var mcServer=require("./");
 
-mcServer.createMCServer({
-  "motd": "A Minecraft Server \nRunning flying-squid",
-  "port": process.env.PORT || 1337,
-  "max-players": 10,
-  "online-mode": true,
-  "logging": true,
-  "gameMode": 1,
-  "generation": {
-    "name": "diamond_square",
-    "options":{
-      "worldHeight": 80
-    }
-  },
-  "kickTimeout": 10000,
-  "plugins": {
+var settings;
 
-  },
-  "modpe": false,
-  "view-distance": 10
-});
+try {
+  settings = require('./config/settings');
+}
+catch(err) {
+  settings = require('./config/default-settings');
+}
+
+module.exports=mcServer.createMCServer(settings);
+
+

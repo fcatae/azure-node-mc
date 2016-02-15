@@ -1,0 +1,1 @@
+{"version":3,"sources":["lib/plugins/signs.js"],"names":[],"mappings":";;AAAA,MAAM,CAAC,OAAO,CAAC,MAAM,GAAC,UAAS,MAAM,EACrC;;CAEC,CAAC","file":"lib/plugins/signs.js","sourcesContent":["module.exports.player=function(player)\n{\n//WIP: temporary removed\n};"],"sourceRoot":"/source/"}
